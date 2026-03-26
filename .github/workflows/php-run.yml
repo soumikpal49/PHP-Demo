@@ -70,17 +70,17 @@ jobs:
     name: Build PHP App
     runs-on: ubuntu-latest
     needs: code-security-check
+  
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+          
       - name: Build Application
         run: |
           mkdir -p build
-          echo "Build Version : $(date)" > build/version.txt
+          echo "Build : $(date)" > build/build_version.txt
           cp index.php build/
-
-      
+  
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
