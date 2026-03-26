@@ -77,9 +77,10 @@ jobs:
           
       - name: Build Application
         run: |
-          mkdir -p build
-          echo "Build Version: $(date)" > build/version.txt
-          cp index.php build/
+           mkdir -p build
+           echo "Build version: $(date)" > build/version.txt
+           cp index.php build/
+
   
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
