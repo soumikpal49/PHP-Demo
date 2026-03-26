@@ -93,7 +93,7 @@ jobs:
         run: |
           # Configure Git to identify as GitHub Actions Bot
           git config --global user.name "soumikpal49"
-          git config --global user.email "soumikpal49@gmail.com"
+          git config --global user.email "soumik.pal@hcltech.com"
           # Stage the new folder/file
           git add build_outputs/
           # Only commit if there are changes (prevents errors if file is identical)
