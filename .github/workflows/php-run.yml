@@ -84,8 +84,8 @@ jobs:
           # 2. Create the folder
           mkdir -p build_outputs
           # 3. Save info to the file
-          echo "Build Number: $BUILD_NUM" > build_outputs/build_info.txt
-          echo "Timestamp: $TIMESTAMP" >> build_outputs/build_info.txt
+          echo "Build Number: $BUILD_NUM" > build/build_info.txt
+          echo "Timestamp: $TIMESTAMP" >> build/build_info.txt
           echo "Generated log for build #$BUILD_NUM"
 
           
