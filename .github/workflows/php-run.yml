@@ -1,6 +1,5 @@
 name: Test and Run PHP App
 
-
 on:
   workflow_dispatch:
 
