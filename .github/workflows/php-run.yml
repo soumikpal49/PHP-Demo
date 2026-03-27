@@ -86,7 +86,7 @@ jobs:
           # 3. Save info to the file
           echo "Build Number: $BUILD_NUM" > build_outputs/build_info.txt
           echo "Timestamp: $TIMESTAMP" >> build_outputs/build_info.txt
-          echo "Generated log for build #$BUILD_NUM"
+          echo "Generated log for build #$BUILD_NUM and time #$TIMESTAMP"
 
       
            
