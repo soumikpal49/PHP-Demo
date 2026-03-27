@@ -88,17 +88,7 @@ jobs:
           echo "Timestamp: $TIMESTAMP" >> build_outputs/build_info.txt
           echo "Generated log for build #$BUILD_NUM"
 
-      - name: Commit and Push to Branch
-        run: |
-          # Configure Git to identify as GitHub Actions Bot
-          git config --global user.name "soumikpal49"
-          git config --global user.email "soumikpal49@gmail.com"
-          # Stage the new folder/file
-          git add build_outputs/
-          # Only commit if there are changes (prevents errors if file is identical)
-          git commit -m "docs: record build #${{ github.run_number }} info" || exit 0
-          # Push back to the main branch
-          git push
+      
            
   push-to-repo:
     name: Push to Repository 
