@@ -2,7 +2,7 @@
 
 function home(): string
 {
-    return "Hello CI";
+    return "Hello CI/CD";
 }
 
 echo home();
